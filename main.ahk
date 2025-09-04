@@ -22,7 +22,7 @@ Return
 Return
 #If
 
-;Function: Chick if mouse is over a window
+;Function: Checks if mouse is over a window
 MouseIsOver() {
     MouseGetPos, , , windowUnderMouse
     Return windowUnderMouse ? True : False
