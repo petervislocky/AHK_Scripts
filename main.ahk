@@ -22,7 +22,7 @@ Return
 Return
 #If
 
-;Function: Chick if mouse is over a window
+;Function: Check if mouse is over a window
 MouseIsOver() {
     MouseGetPos, , , windowUnderMouse
     Return windowUnderMouse ? True : False
@@ -47,9 +47,3 @@ Sleep 0025
 Run, https://www.google.com/search?q=%clipboard%
 Return
 }
-
-;------------------------------------------------------------------------------------------------
-; Always on top toggle, Alt + T
-!t::
-WinSet, AlwaysOnTop, Toggle, A
-Return

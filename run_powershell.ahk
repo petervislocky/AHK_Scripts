@@ -1,6 +1,7 @@
 ; Run powershell, Ctrl + Alt + T
 ^!t::
-Run, pwsh.exe -NoExit -Command "Set-Location -Path $HOME"
+    EnvGet, home, USERPROFILE
+    Run, wt.exe -p "PowerShell 7" -d "%home%"
 Return
 
 ; Run Fedora 42 in WinTerm; Ctrl + Alt + F
